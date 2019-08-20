@@ -80,7 +80,7 @@ export class DetalleVehiculoPage implements OnInit {
       })
       .catch(error=>{
         this.loadingService.dismiss();
-        console.log(error);
+    
         this.alertService.present('Error','Hubo un error al grabar los datos');
         this.navController.navigateRoot('/home');
       });

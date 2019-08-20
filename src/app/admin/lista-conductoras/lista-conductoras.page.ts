@@ -39,7 +39,7 @@ export class ListaConductorasPage implements OnInit {
     });
   }
   public seleccionarConductora(conductora: MdlConductora) {
-    console.log(conductora);
+    
     this.navParams.set({
       conductora: conductora
     });

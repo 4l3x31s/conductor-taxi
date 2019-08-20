@@ -65,7 +65,7 @@ export class CalendarioCarreraPage implements OnInit {
           this.calendarEvents = [];
           if (this.carreras && this.carreras.length > 0) {
             this.carreras.forEach(element => {
-              console.log(element);
+              
               let nomConductora = '';
               if(element.nombreConductora) {
                 nomConductora = element.nombreConductora;
@@ -80,14 +80,14 @@ export class CalendarioCarreraPage implements OnInit {
           }
         },
         error => {
-          console.error(error);
+          
           this.alertService.present('Error', 'Error al recuperar las carreras.');
           this.navController.navigateRoot('/login');
         });
   }
 
   handleDateClick(event) {
-    console.log(event);
+    
   }
 
   async handleEventClick(event) {

@@ -83,7 +83,7 @@ export class TerminarCarreraPage implements OnInit {
       if (cliente.ui) {
         let notificaciones = {
           notification:{
-            title: 'Mujeres al Volante',
+            title: 'Taxi',
             body: 'La carrera que tenias terminó!!!!',
             sound: 'default',
             click_action: 'FCM_PLUGIN_ACTIVITY',
@@ -98,7 +98,7 @@ export class TerminarCarreraPage implements OnInit {
         };
         this.pushNotifService.postGlobal(notificaciones, '')
         .subscribe(response => {
-          console.log(response);
+          
         });
       }
     });

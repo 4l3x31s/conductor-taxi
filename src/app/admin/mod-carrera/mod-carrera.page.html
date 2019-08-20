@@ -24,8 +24,8 @@
         <ion-input >{{ciudad}}</ion-input>
       </ion-item>
     <ion-item >
-      <ion-label position="stacked">Cambiar Conductora</ion-label>
-      <ion-select interface="popover" formControlName="vConductora" placeholder="Seleccione una Conductora"
+      <ion-label position="stacked">Cambiar Conductor</ion-label>
+      <ion-select interface="popover" formControlName="vConductora" placeholder="Seleccione un Conductor"
                   [(ngModel)]="carrera.idConductora">
           <ion-select-option *ngFor="let conductora of lstConductoras" value="{{conductora.id}}">
               {{conductora.nombre +' '+ conductora.paterno}}

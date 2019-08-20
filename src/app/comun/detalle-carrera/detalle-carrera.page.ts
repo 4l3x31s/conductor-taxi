@@ -111,7 +111,7 @@ export class DetalleCarreraPage implements OnInit {
     directionsDisplay.setMap(map);
     let respuesta = this.calculateAndDisplayRoute(directionsService, directionsDisplay, myLatlngIni, myLatlngFin);
     respuesta.subscribe(data => {
-      console.log(data);
+      
     });
     let markers = [];
     markers.push(new google.maps.Marker
@@ -249,7 +249,7 @@ export class DetalleCarreraPage implements OnInit {
                 if (cliente.ui) {
                   let notificaciones = {
                     notification:{
-                      title: 'Mujeres al Volante',
+                      title: 'Taxi',
                       body: 'La carrera que solicitaste fue aceptada!!!!',
                       sound: 'default',
                       click_action: 'FCM_PLUGIN_ACTIVITY',
@@ -264,7 +264,7 @@ export class DetalleCarreraPage implements OnInit {
                   };
                   this.pushNotifService.postGlobal(notificaciones, '')
                   .subscribe(response => {
-                    console.log(response);
+                    
                   });
                 }
               });
@@ -291,7 +291,7 @@ export class DetalleCarreraPage implements OnInit {
                 if (cliente.ui) {
                   let notificaciones = {
                     notification:{
-                      title: 'Mujeres al Volante',
+                      title: 'Taxi',
                       body: 'La coductora llegará en unos minutos!!!!',
                       sound: 'default',
                       click_action: 'FCM_PLUGIN_ACTIVITY',
@@ -306,7 +306,7 @@ export class DetalleCarreraPage implements OnInit {
                   };
                   this.pushNotifService.postGlobal(notificaciones, '')
                   .subscribe(response => {
-                    console.log(response);
+                    
                   });
                 }
               });
@@ -342,7 +342,7 @@ export class DetalleCarreraPage implements OnInit {
         if (cliente.ui) {
           let notificaciones = {
             notification:{
-              title: 'Mujeres al Volante',
+              title: 'Taxi',
               body: 'La conductora marcó el inicio de la carrera!!!!',
               sound: 'default',
               click_action: 'FCM_PLUGIN_ACTIVITY',
@@ -357,7 +357,7 @@ export class DetalleCarreraPage implements OnInit {
           };
           this.pushNotifService.postGlobal(notificaciones, '')
           .subscribe(response => {
-            console.log(response);
+            
           });
         }
       });

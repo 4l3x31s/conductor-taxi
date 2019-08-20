@@ -48,7 +48,7 @@ export class DetalleCarrerasPage implements OnInit {
   }
 
   handleDateClick(event) {
-    console.log(event);
+  
   }
 
   async handleEventClick(event) {
@@ -104,7 +104,7 @@ export class DetalleCarrerasPage implements OnInit {
               backgroundColor: this.clienteService.getColorPorCliente(element)
             });
           });
-          console.log(this.calendarEvents);
+        
         }
       },
       error => {

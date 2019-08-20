@@ -18,7 +18,7 @@ export class SqliteService {
   getDB(): Promise<SQLiteObject> {
     if (this.db == undefined) {
       return this.sqlite.create({
-        name: 'datamav.db',
+        name: 'datataxi.db',
         location: 'default'
       })
         .then((db: SQLiteObject) => {

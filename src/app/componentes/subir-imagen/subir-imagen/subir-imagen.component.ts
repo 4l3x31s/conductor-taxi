@@ -19,6 +19,7 @@ export class SubirImagenComponent implements OnInit {
 
   urlImagenFirebase: string;
   cargandoImagen: boolean = false;
+  cargando:any;
 
   constructor(
     private storage: AngularFireStorage,
@@ -48,7 +49,7 @@ export class SubirImagenComponent implements OnInit {
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
-            //console.log('Confirm Cancel: blah');
+        
           }
         }, {
           text: 'Continuar',
@@ -87,7 +88,7 @@ export class SubirImagenComponent implements OnInit {
           this.loadingService.dismiss();
           this.alertService.present('Info', 'Imagen subida correctamente.');
         }).catch(e => {
-          console.log(e);
+       
           this.loadingService.dismiss();
           this.alertService.present('Error', 'Error al subir la imagen.');
         });
